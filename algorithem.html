@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>    ALGORITHM SENTENCE
+    </title>
+</head>
+<body>
+
+VAR
+
+   nbv,nbw,nbc:= INTEGER ;
+
+   sentc:= STRING[] ;
+
+BEGIN
+
+  nbc:= 0 ;
+
+  nbw:= 1 ;
+
+  nbv:= 0;
+
+  write("type the sentence")
+
+  read(sentc)
+
+REPEAT
+
+   
+
+   IF (sentc[nbc]=" ") THEN
+
+       nbw:=nbw+1 ;
+
+   END_IF
+
+  IF (sentc[nbc] in ["a","e","u","i","o","y"]) THEN
+
+   nbv:= nbv +1 ;
+
+   END_IF
+
+   nbc := nbc+1 ;
+
+UNTIL (sentc[nbc]=".")
+
+write( "the number of characters ",nbc+1 )
+
+write (" The number of words in the sentence ",nbw)
+
+write (" The number of vowels in the sentence ",nbv)
+
+END
+</body>
+</html>
